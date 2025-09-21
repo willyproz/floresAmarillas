@@ -1,16 +1,15 @@
-body,
-html {
+body, html {
     margin: 0;
     padding: 0;
     height: 100%;
     font-family: 'More Sugar', sans-serif;
-    overflow: hidden;
+    overflow: scroll !important;
     background-image: url("flowersYellowBackground.jpg");
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
-
 }
+
 
 #bg-video {
     position: fixed;
