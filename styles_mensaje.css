@@ -1,0 +1,121 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'More Sugar', sans-serif;
+    overflow: hidden;
+    background-image: url("flowersYellowBackground.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+
+}
+
+#bg-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    color: black;
+    text-align: center;
+}
+
+.main-title {
+    font-size: 2.2rem;
+    font-weight: bold;
+    display: block;
+    white-space: normal;
+    color: #613613;
+}
+
+.typewriter {
+	font-size: 1.2rem;
+	line-height: 1.4;
+	max-width: 90%;
+	margin: 0 auto;
+	padding: 5px 0;
+	white-space: pre-wrap;
+	text-align: justify;
+	background-color: #aaaaaa78;
+	padding: 15px;
+	border-radius: 18px;
+}
+
+.pd-note {
+	font-size: 1.2rem;
+	line-height: 1;
+	margin-top: 25px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 1px;
+	white-space: pre-wrap;
+	text-align: justify;
+	background-color: #d3d1bb;
+	padding: 15px;
+	border-radius: 18px;
+}
+
+.inline-animation {
+    width: 170px;
+    height: auto;
+    opacity: 0;
+    transform: scale(0.5) rotate(-20deg);
+    transition: opacity 1.5s cubic-bezier(0.34, 1.56, 0.64, 1), transform 1.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+    margin-left: 10px;
+
+    animation: floatEffect 4s ease-in-out infinite;
+}
+
+.flowers-image {
+    width: 300px;
+    height: auto;
+    margin-top: -50px;
+    display: block;
+}
+
+.flowers-image-animated {
+    animation: bounceAndPulse 3s ease-in-out infinite alternate;
+}
+
+
+@keyframes floatEffect {
+    0% {
+        transform: translateY(0px) rotate(0deg);
+    }
+
+    50% {
+        transform: translateY(-8px) rotate(2deg);
+    }
+
+    100% {
+        transform: translateY(0px) rotate(0deg);
+    }
+}
+
+@keyframes bounceAndPulse {
+    0% {
+        transform: scale(1) translateY(0px);
+    }
+
+    50% {
+        transform: scale(1.05) translateY(-5px);
+    }
+
+    100% {
+        transform: scale(1) translateY(0px);
+    }
+}
